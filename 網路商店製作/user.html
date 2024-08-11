@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivy's Shop</title>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ce1d706eca.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("styles/main.css");
+      @import url("styles/user.css");
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- 側欄 -->
+      <span id="menu-btn" onclick="toggleSidebar()">
+        <i id="menu-icon" class="fa-solid fa-bars fa-xl"></i>
+      </span>
+      <!-- 標題 -->
+      <a href="index.html" class="title">
+        <h1>Ivy's Shop</h1>
+      </a>
+      <!-- 使用者功能 -->
+      <div id="use_btn">
+        <ul>
+          <a href="user.html"
+            ><i class="fa-solid fa-cart-shopping fa-xl"></i
+          ></a>
+          <a href="user.html"><i class="fa-solid fa-heart fa-xl"></i></a>
+          <a href="user.html" class="user-line"
+            ><i class="fa-solid fa-user fa-xl"></i
+          ></a>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 側邊欄 -->
+    <div id="sidebar">
+      <!-- 側邊欄內容，例如導航連結 -->
+      <span id="menu-close-btn" onclick="toggleSidebar()">
+        <i class="fa-duotone fa-solid fa-xmark"></i>
+      </span>
+    </div>
+
+    <main></main>
+  </body>
+</html>
